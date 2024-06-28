@@ -1,20 +1,30 @@
 import Link from "next/link";
 const Nav = () => {
   return (
-    <nav className="flex items-center justify-between w-screen py-5 px-20">
-      <h1>MWA</h1>
+    <nav className="flex items-center justify-between max-w-screen py-5 px-20">
+      <h1>
+        <Link href="/">MWA</Link>
+      </h1>
       <ul className="flex items-center justify-evenly w-1/2">
-        <li>
-          <Link href="pricing">Pricing</Link>
+        <li className="hover:scale-125 transition-all">
+          <Link href="/pricing" className="hover:font-semibold">
+            Pricing
+          </Link>
         </li>
-        <li>
-          <Link href="/services">Services</Link>
+        <li className="hover:scale-125 transition-all">
+          <Link href="/services" className="hover:font-semibold">
+            Services
+          </Link>
         </li>
-        <li>
-          <Link href="/about">Who we are</Link>
+        <li className="hover:scale-125 transition-all">
+          <Link href="/about" className="hover:font-semibold">
+            Who we are
+          </Link>
         </li>
-        <li>
-          <Link href="/contact">Contact Us</Link>
+        <li className="hover:scale-125 transition-all">
+          <Link href="/contact" className="hover:font-semibold">
+            Contact Us
+          </Link>
         </li>
       </ul>
     </nav>
